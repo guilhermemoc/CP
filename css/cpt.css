@@ -1,0 +1,565 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ body{
+   width: 100%;
+   height: auto;
+   background-image: url('../imgs/bg-bot-cp.jpg');
+   background-size: cover;
+   background-position: center;
+	 font-family: 'Raleway', sans-serif;
+		font-weight: 700;
+		animation: fadein 2s;
+		-moz-animation: fadein 2s;
+		/* Firefox */
+		-webkit-animation: fadein 2s;
+		/* Safari and Chrome */
+		-o-animation: fadein 2s;
+		/* Opera */
+        /*margin-bottom: 80px;*/
+ }
+
+
+
+ /*fade in effect*/
+
+ @keyframes fadein {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+
+ @-moz-keyframes fadein {
+   /* Firefox */
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+
+ @-webkit-keyframes fadein {
+   /* Safari and Chrome */
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+
+ @-o-keyframes fadein {
+   /* Opera */
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+
+
+ /*fadein*/
+
+
+ .b2{
+	 width: 100%;
+	 height: auto;
+	 background-image: url('../imgs/bg-bot2.jpg');
+	 background-size: cover;
+	 background-position: center;
+     background-attachment: fixed;
+	font-family: 'Raleway', sans-serif;
+	 font-weight: 700;
+ }
+
+
+#question_5 {
+     margin-bottom: 40px;
+}
+
+#question_6 {
+     margin-bottom: 200px;
+}
+
+#question_7 {
+    margin-top: 80px;
+     margin-bottom: 200px;
+}
+
+   .wrap{
+     width: 60%;
+     height: auto;
+     margin: 0 auto;
+     display: block;
+   }
+	 .wrap-bar{
+			width: 70%;
+			height: 20vh;
+			margin: 0 auto;
+			display: block;
+		}
+		.wrap-act-bar{
+			width: 80%;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+   .logo-bot{
+   margin-top: calc(100vh - 95vh);
+   }
+
+   .dialog{
+      margin-top: calc(100vh - 89vh);
+     }
+
+	.profile{
+		width: 95px;
+		float: left;
+		margin-right: 1em;
+	}
+
+	.fala{
+		color: white;
+	  font-size: 35px;
+		margin: 2em auto 0;
+		padding-top: 0.6em;
+	}
+
+	.fala2{
+		color: white;
+		font-size: 29px;
+		margin: 0 auto;
+		padding-top: 0.6em;
+		line-height: 1.2em;
+		width: 70%
+	}
+
+	.action-bar{
+		width: 70%;
+		position: fixed;
+		z-index: 99999;
+		bottom: 0;
+		background-color: #020660;
+		height: 18vh;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	.action-bar2{
+		width: 70%;
+		position: fixed;
+		z-index: 99999;
+		bottom: 0;
+		background-color: #020660;
+		height: 18vh;
+		left: 0;
+		right: 0;
+	}
+
+
+	.start{
+		margin-top: calc(18vh/3);
+    height: 3em;
+    width: 13em;
+    background-color: transparent;
+    border: 1px solid #7f5e49;
+    color: fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    float: right;
+    padding-left: 1em;
+    font-size: 11pt;
+		transition: 0.6s ease-in-out;
+	}
+
+		.start:hover{
+			background-color: #7f5e49;
+		}
+
+
+
+
+
+
+/*BOT CSS*/
+.chat-wrap {
+    display: none;
+}
+	.profile-bot-answer{
+		float: right;
+    margin-right: -1em;
+    width: 59px;
+    margin-top: 1em;
+	}
+	.profile-bot{
+		float: left;
+		margin-right: 1em;
+		width: 50px;
+	}
+	.chat-wrap2{float: right;    width: 100%;margin: 2em auto;}
+
+
+	.fala-bot{
+		color: #919090;
+		font-size: 20px;
+		margin: 2em auto 0;
+		line-height: 2em;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 400;
+	}
+
+	.fala-bot2{
+		color: white;
+		font-size: 35px;
+		margin: 0 auto;
+		line-height: 1.2em;
+		line-height: 2em;
+	}
+
+	.dialog-answer{
+		 margin-top:0;
+		 float: right;
+		 color: #fff;
+		 font-family: 'Raleway', sans-serif;
+		 font-weight: 400;
+		}
+
+
+  .btn-option{
+	margin-top: calc(10vh/2);
+    height: 51px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid #7e5d49;
+    color: fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    float: right;
+    font-size: 15pt;
+    transition: 0.8s ease-in-out;
+    margin-left: 1em;
+}
+
+.btn-option:hover{
+	text-align: center;
+	cursor: pointer;
+	background-color: #7e5d49;
+	color: #020660;
+}
+
+.hide {
+    display: none;
+}
+
+
+.btn-ok{
+	margin-top: calc(10vh/2);
+	height: 51px;
+	width: 50px;
+	background-color: transparent;
+	border: 1px solid #7e5d49;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	text-align: center;
+	float: right;
+	font-size: 15pt;
+	transition: 0.8s ease-in-out;
+	margin-left: 1em;
+}
+
+.btn-ok:hover{
+	text-align: center;
+	cursor: pointer;
+	background-color: #7e5d49;
+	color: #020660;
+}
+
+
+/*.form{
+	width: 241px;
+	/*width: 400px;
+	float: left;
+	height: 3em;
+	background-color: transparent;
+	border: 1px solid #7e5d49;
+	margin-top: calc(10vh /2);
+	color: #7e5d49;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+}*/
+
+.form {
+    width: 241px;
+    /* width: 400px; */
+    float: left;
+    height: 3em;
+    background-color: transparent;
+    /* border: 1px solid #7e5d49; */
+    margin-top: calc(10vh /2);
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    outline: none;
+    border: none;
+}
+
+
+	.form:focus{outline: 0;	background-color: transparent;}
+	.btn-option:focus{outline: 0}
+/*BOT CSS*/
+
+.profile-bot-answer2{
+float: right;
+margin-right: -1em;
+width: 50px;
+height: 50px;
+margin-top: 1.5em;
+background: #b3863c;
+margin-left: 1em;
+border-radius: 50%;
+}
+.profile-bot-answer2 p{
+	font-size: 1.7em;
+	text-align: center;
+	margin: 8px auto;
+    text-transform: uppercase;
+
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+	.action-bar{
+		width: 100%;
+	}
+
+	.profile {
+	    width: 46px;
+	    float: left;
+	    margin-right: 1em;
+	}
+	.fala {
+	    color: white;
+	    font-size: 32px;
+	    margin: 2em auto 0;
+	    padding-top: 0.6em;
+	}
+
+	.fala2 {
+    color: white;
+    font-size: 25px;
+    margin: 0 auto;
+    padding-top: 0.6em;
+    line-height: 1.2em;
+    width: 100%;}
+}
+
+@media only screen and (max-width: 500px) {
+
+	.profile {
+	    width: 54%;
+	    float: none;
+	    margin-right: 1em;
+	    margin: 0 auto;
+	    display: block;
+	    text-align: center;
+	}
+
+	.fala {
+    color: white;
+    font-size: 32px;
+    margin: 0 auto 0;
+    padding-top: 0.6em;
+		text-align: center;
+}
+
+.fala2 {
+    color: white;
+    font-size: 22px;
+    margin: 0em auto 6em;
+    padding-top: 0.6em;
+    line-height: 1.2em;
+    width: 100%;
+		text-align: center;
+}
+
+
+.wrap {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+.wrap-act-bar {
+    width: 98%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fala2 {
+    color: white;
+    font-size: 22px;
+    margin: 0em auto 6em;
+    padding-top: 0.6em;
+    line-height: 1.2em;
+    width: 100%;}
+
+
+		.start {
+    margin-top: calc(18vh/3);
+    height: 3em;
+    width: 13em;
+    background-color: transparent;
+    border: 1px solid #7f5e49;
+    color: fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    float: none;
+    padding-left: 1em;
+    font-size: 11pt;
+    transition: 0.6s ease-in-out;
+}
+.profile-bot-answer {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.dialog-answer {
+    margin-top: 0;
+    float: right;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.dialog-answer {
+    margin-top: 0;
+    float: none;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+
+.fala-bot {
+    color: #919090;
+    font-size: 20px;
+    margin: 2em auto 0;
+    line-height: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.profile-bot {
+    float: none;
+    width: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.dialog {
+    margin-top: 0;
+}
+
+
+.chat-wrap2 {
+    float: right;
+    width: 100%;
+    margin: 2em auto;
+}
+
+
+.btn-option {
+    margin-top: calc(10vh/2);
+    height: 51px;
+    width: 60px;
+    background-color: transparent;
+    border: 1px solid #7e5d49;
+    color: fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    float: none;
+    font-size: 15pt;
+    transition: 0.2s ease-in-out;
+    margin-left: 1em;
+}
+.btn-ok {
+    margin-top: calc(10vh/2);
+    height: 51px;
+    width: 50px;
+    background-color: transparent;
+    border: 1px solid #7e5d49;
+    color: fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    float: none;
+    font-size: 15pt;
+    transition: 0.2s ease-in-out;
+    margin-left: 1em;
+}
+
+
+.profile-bot-answer2 {
+    float: none;
+    margin-right: -1em;
+    width: 50px;
+    height: 50px;
+    margin-top: 1.5em;
+    background: #b3863c;
+    margin-left: 1em;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.profile-bot-answer2 p {
+    font-size: 1.7em;
+    text-align: center;
+    margin: 9px auto;
+    padding-top: 9px;
+    vertical-align: middle;
+}
+
+.action-bar{
+	width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
