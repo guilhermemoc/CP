@@ -1,11 +1,11 @@
 @font-face {
   font-family: CantataOne-Regular;
-  src: url('../font/CantataOne-Regular.ttf');
+  src: url('../Font/CantataOne-Regular.ttf');
 }
 
 @font-face {
   font-family: georgia;
-  src: url('../font/georgia.ttf');
+  src: url('../Font/georgia.ttf');
 }
 
 html,
@@ -114,6 +114,12 @@ body {
   /*background-color: #020423;*/
 }
 
+  .ic-fa{
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+  }
+
 .container {
   width: 100%;
   height: auto;
@@ -126,6 +132,8 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
+  background-image: url('http://i.imgur.com/VES2azw.jpg');
+  background-size: contain;
 }
 
 .ld-filter {
@@ -147,9 +155,9 @@ body {
 .ld-filter h1 {
   font-family: georgia;
   color: #fff;
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-weight: bolder;
-  width: 140%;
+  width: 100%;
   margin-top: 25vh;
   margin-left: 12%;
   margin-bottom: 0.4em;
@@ -277,7 +285,7 @@ body {
   height: 48px;
   position: absolute;
   top: 30px;
-  right: 30px;
+  right: 10px;
   outline: none;
   cursor: pointer;
   transform: scale(0, 0);
@@ -292,7 +300,7 @@ body {
 .cross-bars-whatever:before {
   content: "";
   background: white;
-  width: 60px;
+  width: 40px;
   height: 8px;
   display: block;
   transform: rotate(45deg);
@@ -304,7 +312,7 @@ body {
 .cross-bars-whatever:after {
   content: "";
   background: white;
-  width: 60px;
+  width: 40px;
   height: 8px;
   display: block;
   transform: rotate(-45deg);
@@ -314,7 +322,7 @@ body {
 }
 
 .navigation-container {
-  height: 200px;
+  height: 350px;
   font-size: 40px;
   line-height: 1.75em;
   margin: 0 auto;
@@ -379,7 +387,7 @@ body {
 }
 
 .btn-calcular:hover {
-  background-color: #736852;
+  background-color: #c0a05d;
   border: none;
 }
 
@@ -400,7 +408,7 @@ body {
 }
 
 .calc-btn:hover {
-  background-color: #736852;
+  background-color: #c0a05d;
   border: none;
 }
 
@@ -416,7 +424,7 @@ body {
 .smais {
   color: #fff;
   text-align: center;
-  margin: 5em auto 0;
+  margin: 25% auto 0;
   display: block;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -501,7 +509,7 @@ body {
   color: #c0a05d;
   /*border-left: 1px solid #c0a05d;*/
   font-family: CantataOne-Regular;
-  font-size: 1em;
+  font-size: 0.9em;
   display: block;
   margin: 2em auto;
   text-align: left;
@@ -520,7 +528,7 @@ body {
 .b5-fd-h1 {
   font-family: georgia;
   color: #fff;
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: bolder;
   width: 100%;
   margin-bottom: 1em;
@@ -565,7 +573,7 @@ body {
 }
 
 .calc-btn-bot:hover {
-  background-color: #736852;
+  background-color: #c0a05d;
   border: none;
 }
 
@@ -683,6 +691,7 @@ body {
   display: block;
   height: auto;
   background: #010423;
+  margin-top: 0;
 }
 
 .services-left {
@@ -711,6 +720,7 @@ body {
 .services-right li:before {
   content: "• ";
   color: #c0a05d;
+  margin-left: -10px;
 }
 
 .services-right ul {
@@ -736,7 +746,7 @@ body {
 }
 
 .calc-btn-services:hover {
-  background-color: #736852;
+  background-color: #c0a05d;
   border: none;
 }
 
@@ -931,6 +941,246 @@ margin: 0 35%;
 }
 /*5*/
 
+
+
+
+
+/*PAGINA DE CADASTRO*/
+  .c-contain{
+    background-image: url('../imgs/bg-cadastro.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;;
+    }
+
+  .c-logo{
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding-top: 50px;
+    width: 190px;
+  }
+  .c-centered{
+    width:50%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+
+  .c-centered p{
+    color: #c0a05d;
+    font-family: CantataOne-Regular;
+    font-size: 1em;
+    margin-top: 2%;
+}
+
+    .c-centered h1 {
+      font-family: georgia;
+      color: #fff;
+      font-size: 2.5em;
+      font-weight: bolder;
+      margin-top: 5%;
+  }
+
+  .c-centered button{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    border: 1px solid #c0a05d;
+    color: #fff;
+    background: transparent;
+    text-align: right !important;
+    padding: 15px 70px;
+    transition: .3s ease-in;
+    margin-bottom: 5%;
+  }
+
+  .c-centered button:hover{
+    background-color: #c0a05d;
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+
+
+  /*INPUT FORM CADASTRO*/
+      input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+      font-size: 1em;
+      color: #c0a05d;
+      top: -2.25rem;
+      -webkit-transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+      transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+
+    }
+
+    .styled-input {
+      float: none;
+      width: 75.3333%;
+      margin: 2rem 0 1rem;
+      position: relative;
+      margin: 5% auto;
+    }
+    .styled-input label {
+      color: #999;
+      padding: 1rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
+      transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
+      pointer-events: none;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+    }
+    .styled-input.wide {
+      width: 100%;
+    }
+
+    input, textarea {
+      padding: 1rem 1rem;
+      border: 0;
+      width: 100%;
+      font-size: 1rem;
+      border-bottom: 1px solid #c0a05d !Important;
+      background-color: transparent;
+      border: none;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      color: #fff;
+      left: 0;
+      border-left: none;
+      right: 0;
+    }
+    input ~ span, textarea ~ span {
+      display: block;
+      width: 0;
+      height: 3px;
+      background: #c0a05d;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      -webkit-transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+      transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+    }
+    input:focus, textarea:focus {
+      outline: 0;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+    }
+    input:focus ~ span, textarea:focus ~ span {
+      width: 106%;
+      -webkit-transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+      transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 15em;
+    }
+    /*INPUT*/
+
+    .escolha-contain{
+      margin:0 auto;
+      width: 80%;
+      display: block;
+        }
+
+    body .e-centered .escolha{
+      background-color: transparent;
+      border: 1px solid #fff;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      display: inline-block;
+      color: #fff;
+      padding: 29px 60px;
+      font-size: 20px;
+      transition: 0.3s ease-in-out;
+      outline: none;
+    }
+      body .e-centered .escolha:hover{
+        border: 1px solid #c0a05d;
+        color: #c0a05d;
+        cursor: pointer;
+      }
+      body .e-centered .escolha:focus{
+        font-size: 18px;
+      }
+
+    .e-contain{
+      background-image: url('../imgs/bg-cadastro.jpg');
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100vh;
+      }
+    .e-centered{
+      width:100%;
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+    }
+
+    .e-centered p{
+      color: #c0a05d;
+      font-family: CantataOne-Regular;
+      font-size: 1em;
+      margin-top: 2%;
+      margin-bottom: 10%
+  }
+
+      .e-centered h1 {
+        font-family: georgia;
+        color: #fff;
+        font-size: 2.5em;
+        font-weight: bolder;
+        padding-top: 5%;
+    }
+
+
+  .e-centered hr {
+    transform: rotate(90deg);
+    width: 150px;
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #c0a05d;
+}
+/*PAGINA DE CADASTRO*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*fade in effect*/
 
 @keyframes fadein {
@@ -1072,7 +1322,15 @@ margin: 0 35%;
   }
   .b4-fd-h1 {
     text-align: center;
-  }
+    margin-top: -27%;
+}
+.b4 {
+    width: 100%;
+    display: block;
+    height: auto;
+    background: #010423;
+    margin-top: -5% !important;
+}
   .b4-fd-small {
     text-align: center;
   }
@@ -1091,7 +1349,6 @@ margin: 0 35%;
     vertical-align: top;
     text-align: left;
     line-height: 0.6em;
-    color: #363636;
   }
   .b5-fd-h1 {
     font-size: 2.5em;
@@ -1109,21 +1366,64 @@ margin: 0 35%;
   }
 
 
+    .e-centered hr{
+      transform: rotate(180deg);
+      width: 70%;
+      display: block;
+      margin: 6% auto;
+    }
+
+
+
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px){
+  .b5-fd-small {
+      color: #fff;
+      /* border-left: 1px solid #c0a05d; */
+      font-family: CantataOne-Regular;
+      font-size: 0.8em;
+      display: block;
+      margin: 1em auto;
+      text-align: center;
+  }
+
+  .b3 {
+      width: 100%;
+      background: #010423;
+      height: 100vh;
+      background-image: url('../imgs/bf-truck.jpg');
+      background-size: cover;
+      background-position: center;
+      /* position: absolute; */
+      /* margin-top: 2em; */
+      padding-bottom: 27%;
+  }
+
+
+  .b4 {
+    width: 100%;
+    display: block;
+    height: auto;
+    background: #010423;
+    margin-top: 0;
+  }
+
   .ld-filter {
     display: inline-block;
     width: 50vw;
   }
   .ld-filter small {
-    font-size: 0.7em !Important;
+    font-size: 12px !Important;
   }
   .ld-filter h1 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .ld-filter p {
-    font-size: 0.8em;
+      font-size: 14px;
+      width: 83%;
+      text-align: center;
+      margin-bottom: 7%;
   }
   .smais {
     margin: 3em auto 0;
@@ -1178,6 +1478,7 @@ margin: 0 35%;
   }
   .b4-fd-h1 {
     text-align: center;
+    margin-top: -30%;
   }
   .b4-fd-p {
     text-align: center;
@@ -1234,9 +1535,228 @@ margin: 0 35%;
 
 }
 
+@media only screen and (max-width: 380px) {
+  .ld-filter p {
+      margin: 3% auto;
+      width: 90%;
+  }
+
+  .b2 {
+    height: auto;
+    margin-top: 10%;
+}
+}
+
+@media only screen and (max-width: 860px) and (orientation: landscape) {
+  .saiba-more{
+    display: none;
+  }
+  .box-b2{
+    margin-top: 3%;
+  }
+  .landing {
+      width: 100%;
+      height: 160vh;}
+
+      body .ld-filter h1 {
+    font-family: georgia;
+    color: #fff;
+    font-size: 2.5em;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 36vh auto 1em;
+}
+
+      .box1-text {
+          display: inline-block;
+          font-size: 8em;
+          vertical-align: top;
+          text-align: left;
+          line-height: 1.3em;
+      }
+
+      .box-p {
+          display: inline-block;
+          font-size: 18px;}
+
+          .b5-fd-h1 {
+              font-size: 1.5em;
+          }
+
+
+.b3 {
+    padding-bottom: 50%;
+}
+
+.box-b2 {
+    background-color: #06095f;
+    width: 90%;
+    text-align: center;
+    display: block;
+    height: auto;
+    z-index: -9;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+.b3-fd-h1 {
+    font-size: 2.5em;}
+.b4-fd-h1 {
+    font-size: 2.5em;}
+
+
+}
+
 @media only screen and (max-width: 500px) {
+
+    /*FORM CADASTRO*/
+
+    .c-centered h1 {
+      font-family: georgia;
+      color: #fff;
+      font-size: 28px;
+      font-weight: bolder;
+      margin-top: 15%;
+      }
+
+      .c-centered {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+
+
+    .styled-input {
+        float: left;
+        width: 87%;
+        margin: 2rem 0 1rem;
+        position: relative;
+        margin: 6% auto;
+        text-align: center;
+        display: block;
+    }
+
+
+    .e-centered p {
+    color: #c0a05d;
+    font-family: CantataOne-Regular;
+    font-size: 1em;
+    margin-top: 2%;
+    margin-bottom: 30%;
+  }
+  body .e-centered .escolha {
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  color: #fff;
+  padding: 15px 40px;
+  width: 100%;
+  font-size: 19px;
+  transition: 0.3s ease-in-out;
+  outline: none;
+}
+
+.e-contain {
+    background-image: url('../imgs/bg-cadastro.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 119vh;
+    overflow: hidden;
+}
+
+    /*FORM CADASTRO*/
+
+
+
+
+
+
+
+  .three-bars-whatever {
+      width: 30px;
+      height: 17px;
+      border: solid 3px white;
+      border-left: none;
+      border-right: none;
+      position: fixed;
+      top: 32px;
+      right: 30px;
+      display: block;
+      outline: none;
+      cursor: pointer;
+      transform: scale(1, 1) rotate(0deg);
+      transition: transform 0.75s ease 0.75s;
+      z-index: 9999;
+  }
+  .three-bars-whatever:after {
+      content: "";
+      background: white;
+      width: 30px;
+      height: 3px;
+      margin: 0 auto;
+      position: absolute;
+      top: 7px;
+      display: block;
+  }
+  .box-p {
+    display: inline-block;
+    font-size: 22px;
+    vertical-align: middle;
+    text-align: left;
+    margin-top: calc(150px/3);
+    color: #999999;
+    width: 66%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+/*menu*/
+#nav_switch:checked + .full-screen-navigation > .navigation-container {
+    opacity: 1;
+    margin: calc(50vh - 150px) auto 0;
+    height: 286px;
+    transition: opacity 1s ease 2.50s, margin 1s ease 2.50s;
+}
+.navigation-container > li {
+    text-align: center;
+    height: 18%;
+}
+.navigation-container > li > a {
+    color: #f2f2f2;
+    text-decoration: none;
+    transition: text-shadow 0.25s;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+}
+/*menu*/
+
+
+
+
+
+
+
+  .saiba-more
+  {display: none;}
+  .b4-fd-p{
+    width: 90%;
+  }
+  .services-right li {
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+
   body .ld-filter h1 {
-    font-size: 1.5em;
+    font-size: 27px;
   }
   body .ld-filter {
     background-color: transparent;
@@ -1260,26 +1780,29 @@ margin: 0 35%;
     position: fixed;
     left: 7%;
     top: 0.6em;
-    top: 1.6em;
+    top: 2.6em;
     width: 40%;
   }
   .p2-fd-h1 {
-    font-size: 1.5em;
-    text-align: center;
+      font-size: 1.5em;
+      text-align: center;
+      width: 90%;
   }
   .p2-fd-p {
     margin: 1em auto;
     text-align: center;
+    width: 90%;
   }
   .text-b3 {
     width: 90%;
     left: 0;
-    margin: 5em auto;
+    margin: 7em auto 0;
     right: 0;
     text-align: center;
   }
   .p2-fd-small {
     text-align: center;
+    width: 90%;
   }
   /*.b3{position: absolute;}*/
   .b3-fd-h1 {
@@ -1287,7 +1810,7 @@ margin: 0 35%;
     font-size: 1.5em;
   }
   .btn-calcular {
-    width: 7em;
+    width: 8em;
     height: 5em;
     right: 19%;
     font-size: 0.5em;
@@ -1312,12 +1835,11 @@ margin: 0 35%;
     width: 100%
   }
   .box1-text {
-    display: inline-block;
-    font-size: 8em;
-    vertical-align: top;
-    text-align: left;
-    line-height: 0.9em;
-    color: #363636;
+      display: inline-block;
+      font-size: 8em;
+      vertical-align: top;
+      text-align: left;
+      line-height: 1.3em;
   }
   .box-p {
     display: inline-block;
@@ -1326,21 +1848,34 @@ margin: 0 35%;
   .services-right {
     display: inline-block;
     width: 100%;
-    margin-top: calc(100vh/2);
+    margin-top: calc(100vh/20);
     margin-left: 0;
   }
   .services-right li {
-    text-align: center;
+    text-align:center;
   }
   .b4-fd-h1 {
     font-size: 2em;
   }
   .b5-fd-h1 {
-    font-size: 1.9em;
+    font-size: 1.5em;
+    width: 90%;
   }
+  .b5-fd-p {
+    width: 90%;
+  }
+
+  .calc-btn-services {
+      width: 17em;
+      height: 4em;}
+
+  .calc-btn-bot {
+      width: 17em;
+      height: 4em;}
+
   .calc-btn {
-      width: 16em;
-      height: 3em;
+      width: 17em;
+      height: 4em;
       background-color: transparent;
       border: 1px solid #736852 !important;
       color: #fff;
@@ -1356,30 +1891,108 @@ margin: 0 35%;
       .b3 {
           width: 100%;
           background: #010423;
-          height: 100vh;
+          height: 77vh;
           background-image: url('../imgs/bf-truck.jpg');
           background-size: cover;
           background-position: center;
           /* position: absolute; */
           /* margin-top: 2em; */
-          padding-bottom: 7em;
+          padding-bottom: 0;
       }
-      .box-b5 {
-    width: 90%;
-    height: auto;
-    background-image: url('../imgs/bg-bot.jpg');
-    margin: 0 auto;
-    padding-bottom: 5em;
+  .box-b5 {
+      width: 90%;
+      height: auto;
+      background-image: url('../imgs/bg-bot.jpg');
+      margin: 0 auto;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-bottom: 5em;
+  }
+  .box-b2 {
+      background-color: #06095f;
+      width: 90%;
+      text-align: center;
+      display: block;
+      height: auto;
+      z-index: -9;
+      margin: 0 auto;
+      padding-top: 1em;
+      padding-bottom: 2em;
+  }
+  .fd-p {
+      font-size: 1em;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      color: #919191;
+      line-height: 2em;
+      text-align: center;
+      margin: 0 auto;
+      width: 90% !important;
+  }
+  .b5 {
+      width: 100%;
+      height: auto;
+    }
+    .btn-option {
+    margin-top: calc(10vh/2);
+    height: 51px;
+    width: 60px;
+    background-color: transparent;
+    border: 1px solid #7e5d49;
+    color: fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    float: none;
+    font-size: 9pt;
+    transition: 0.2s ease-in-out;
+    margin-left: 1em;
 }
-
-
-
+.b4 {
+    margin-top: 30% !Important;
+}
 
 }
 
 @media only screen and (max-width: 320px) {
+  .b4 {
+      margin-top: 30% !Important;
+  }
+
+  .form {
+      width: 230px !important;
+      /* width: 400px; */
+      float: left;
+      height: 3em;
+      background-color: transparent;
+      /* border: 1px solid #7e5d49; */
+      margin-top: calc(10vh /2);
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      font-size: 1em;
+      outline: none;
+      border: none;
+  }
+
+  .btn-option {
+      margin-top: calc(10vh/2);
+      height: 51px;
+      width: 60px;
+      background-color: transparent;
+      border: 1px solid #7e5d49;
+      color: fff;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      float: right !important;
+      font-size: 15pt;
+      transition: 0.2s ease-in-out;
+      margin-left: 1em;
+  }
+
   .btn-calcular {
-    width: 7em;
+    width: 8em;
     height: 5em;
     right: 19%;
     font-size: 0.5em;
@@ -1409,21 +2022,20 @@ margin: 0 35%;
     width: 90%;
   }
   .b2 {
-    height: 140vh;
+    height: 100vh;
   }
   .b3-fd-h1 {
     font-size: 2.5em;
   }
   .b3 {
-    height: 125vh;
+    height: 85vh;
   }
   .box1-text {
     display: inline-block;
     font-size: 7em;
     vertical-align: top;
     text-align: left;
-    line-height: 0.9em;
-    color: #363636;
+    line-height: 1.3em;
   }
   .b5-fd-h1 {
     padding-top: 1em;
@@ -1515,19 +2127,19 @@ margin: 0 35%;
 
 
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /* --------------------------------
 
@@ -1741,6 +2353,164 @@ xpopup
     margin: 8em auto;
   }
 }
+
+/*INSERIDO HJ 20/07*/
+/*INSERIDO HJ 20/07*/
+/*INSERIDO HJ 20/07*/
+/*INSERIDO HJ 20/07*/
+/*INSERIDO HJ 20/07*/
+/*INSERIDO HJ 20/07*/
+
+@media (min-width: 1917px){
+  .smais {
+    color: #fff;
+    text-align: center;
+    margin: 25vh auto 0;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    }
+  .ld-filter h1 {
+    font-family: georgia;
+    color: #fff;
+    font-size: 4.5em;
+    font-weight: bolder;
+    width: 140%;
+    margin-top: 35vh;
+    margin-left: 12%;
+    margin-bottom: 0.4em;
+  }
+  .ld-filter {
+      display: inline-block;
+      width: 49.1vw;
+    }
+  .btn-calcular {
+    width: 12em;
+    height: 3em;
+    background-color: transparent;
+    border: 1px solid #736852;
+    margin-top: 28px;
+    position: fixed;
+    z-index: 99;
+    right: 4.2%;
+    margin-right: 2em;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .three-bars-whatever {
+    width: 42px;
+    height: 20px;
+    border: solid 2px white;
+    border-left: none;
+    border-right: none;
+    position: fixed;
+    top: 37px;
+    right: 32px;
+    display: block;
+    outline: none;
+    cursor: pointer;
+    transform: scale(1, 1) rotate(0deg);
+    transition: transform 0.75s ease 0.75s;
+    z-index: 9999;
+  }
+  .three-bars-whatever:after {
+      content: "";
+      background: white;
+      width: 42px;
+      height: 2px;
+      margin: 0 auto;
+      position: absolute;
+      top: 9px;
+      display: block;
+  }
+  .fd-h1 {
+      font-family: georgia;
+      color: #fff;
+      font-size: 4em;
+    }
+    .fd-small {
+    color: #c0a05d;
+    font-size: 21px;
+  }
+  .fd-p {
+    font-size: 20px;
+  }
+  .numbers-b3 {
+    width: 48%;
+  }
+  .b3-fd-h1 {
+      font-size: 4em;
+    }
+    .b4-fd-h1 {
+        font-size: 4em;
+      }
+    .b4-fd-small{
+      font-size: 21px;
+    }
+    .calc-btn-services {
+    width: 16em;
+    height: 3em;
+    background-color: transparent;
+    border: 1px solid #736852 !important;
+    color: #fff;
+    margin: 1em auto;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+    margin-left: 2%;
+  }
+  .calc-btn {
+    width: 16em;
+    height: 3em;
+    background-color: transparent;
+    border: 1px solid #736852 !important;
+    color: #fff;
+    margin: 1em auto;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    float: left;
+    margin-left: 12%;
+    font-size: 16px;
+  }
+  .b5-fd-h1 {
+    font-family: georgia;
+    color: #fff;
+    font-size: 4em;
+    font-weight: bolder;
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: center;
+    margin: 2em auto 0;
+    padding-top: 5em;
+  }
+  .b5-fd-small {
+    font-size: 21px;
+  }
+  .calc-btn-bot {
+    font-size: 16px;
+  }
+  .box-b5 {
+    width: 90%;
+    height: 90%;
+    background-image: url('../imgs/bg-bot.jpg');
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+}
+
+
 
 .fa-instagram,.fa-facebook-square,
 .fa-twitter-square{

@@ -19,6 +19,17 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+.phone {
+    margin-left: 2% !important;
+    width: 236px !important;
+}
+
+#chat {
+    height: 450px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
  body{
    width: 100%;
    height: auto;
@@ -27,14 +38,7 @@ time, mark, audio, video {
    background-position: center;
 	 font-family: 'Raleway', sans-serif;
 		font-weight: 700;
-		animation: fadein 2s;
-		-moz-animation: fadein 2s;
-		/* Firefox */
-		-webkit-animation: fadein 2s;
-		/* Safari and Chrome */
-		-o-animation: fadein 2s;
-		/* Opera */
-        /*margin-bottom: 80px;*/
+
  }
 
 
@@ -96,18 +100,6 @@ time, mark, audio, video {
  }
 
 
-#question_5 {
-     margin-bottom: 40px;
-}
-
-#question_6 {
-     margin-bottom: 200px;
-}
-
-#question_7 {
-    margin-top: 80px;
-     margin-bottom: 200px;
-}
 
    .wrap{
      width: 60%;
@@ -163,10 +155,11 @@ time, mark, audio, video {
 		z-index: 99999;
 		bottom: 0;
 		background-color: #020660;
-		height: 18vh;
+		height: 85px;
 		left: 0;
 		right: 0;
 		margin: 0 auto;
+		display: none;
 	}
 	.action-bar2{
 		width: 70%;
@@ -181,7 +174,7 @@ time, mark, audio, video {
 
 
 	.start{
-		margin-top: calc(18vh/3);
+		margin-top: calc(18vh/5);
     height: 3em;
     width: 13em;
     background-color: transparent;
@@ -200,7 +193,10 @@ time, mark, audio, video {
 			background-color: #7f5e49;
 		}
 
-
+#yes-1{float: none !important;}
+#no-1{float: none !important;}
+#receberDepois{float: none !important;}
+#receberAgora{float: none !important;}
 
 
 
@@ -226,7 +222,7 @@ time, mark, audio, video {
 	.fala-bot{
 		color: #919090;
 		font-size: 20px;
-		margin: 2em auto 0;
+		margin: 2em auto 0 66px;
 		line-height: 2em;
 		font-family: 'Raleway', sans-serif;
 		font-weight: 400;
@@ -250,7 +246,7 @@ time, mark, audio, video {
 
 
   .btn-option{
-	margin-top: calc(10vh/2);
+	margin-top: calc(10vh/3);
     height: 51px;
     width: 200px;
     background-color: transparent;
@@ -269,7 +265,8 @@ time, mark, audio, video {
 	text-align: center;
 	cursor: pointer;
 	background-color: #7e5d49;
-	color: #020660;
+	color: #fff;
+	font-weight: 800;
 }
 
 .hide {
@@ -316,17 +313,17 @@ time, mark, audio, video {
 }*/
 
 .form {
-    width: 241px;
+    width: 292px;
     /* width: 400px; */
     float: left;
-    height: 3em;
+    height: 2em;
     background-color: transparent;
     /* border: 1px solid #7e5d49; */
-    margin-top: calc(10vh /2);
+    margin-top: calc(10vh /3);
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 24px;
     outline: none;
     border: none;
 }
@@ -354,7 +351,57 @@ border-radius: 50%;
 
 }
 
+@media (max-width: 400px) {
+    #chat {
+        height: 350px;
+    }
 
+		.tel-form{
+			display: none !important;
+		}
+
+}
+
+
+@media (max-width: 769px) {
+	.form {
+	    width: 211px;
+	    /* width: 400px; */
+	    float: left;
+	    height: 2em;
+	    background-color: transparent;
+	    /* border: 1px solid #7e5d49; */
+	    margin-top: calc(10vh /3);
+	    color: #fff;
+	    font-family: 'Raleway', sans-serif;
+	    font-weight: 400;
+	    font-size: 21px;
+	    outline: none;
+	    border: none;
+	}
+
+	.phone {
+    margin-left: 1% !important;
+    width: 196px !important;
+	}
+
+
+	.btn-option {
+    margin-top: calc(10vh/3);
+    height: 51px;
+    width: 150px;
+    background-color: transparent;
+    border: 1px solid #7e5d49;
+    color: fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    float: right;
+    font-size: 12pt;
+    transition: 0.8s ease-in-out;
+    margin-left: 1em;
+	}
+}
 
 @media only screen and (max-width: 1024px) {
 
@@ -383,7 +430,85 @@ border-radius: 50%;
     width: 100%;}
 }
 
+@media only screen and (max-width: 322px) {
+
+body .mob-ok{
+		  width: 50px !Important;
+	}
+
+	.tel-form{
+		display: none !important;
+	}
+
+
+body .mob-simular{
+	width: 75px !important;
+}
+
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 325px) {
+
+	.tel-form{
+		display: none !important;
+	}
+
+
+body .wrap-bar {
+		width: 70%;
+		height: 14vh !Important;
+		margin: 0 auto;
+		display: block;
+}
+body .fala {
+		color: white;
+		font-size: 28px !Important;
+		margin: 0 auto 0;
+		padding-top: 0.6em;
+		text-align: center;
+}
+body .fala2 {
+	color: white;
+	font-size: 18px !Important;
+	margin: 0em auto 6em;
+	padding-top: 0.6em;
+	line-height: 1.2em;
+	width: 100%;
+}
+
+}
+
+
+
+
 @media only screen and (max-width: 500px) {
+	.logo-bot {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+	.tel-form{
+		display: none !important;
+	}
+
+	body .email-form{
+		width: 195px;
+	}
+
+	body .mob-rec{
+		width: 130px !important;
+	}
+
+	body .btn-volta{
+		width: 200px !important;
+	}
+
 
 	.profile {
 	    width: 54%;
@@ -475,7 +600,7 @@ border-radius: 50%;
 .fala-bot {
     color: #919090;
     font-size: 20px;
-    margin: 2em auto 0;
+    margin: 1em auto 0;
     line-height: 2em;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -501,10 +626,13 @@ border-radius: 50%;
 }
 
 
-.btn-option {
-    margin-top: calc(10vh/2);
+
+
+
+	.btn-option {
+    margin-top: calc(10vh/3);
     height: 51px;
-    width: 60px;
+    width: 86px ;
     background-color: transparent;
     border: 1px solid #7e5d49;
     color: fff;
@@ -512,10 +640,51 @@ border-radius: 50%;
     font-weight: 600;
     text-align: center;
     float: none;
-    font-size: 15pt;
+    font-size: 13pt;
+    transition: 0.2s ease-in-out;
+    margin-left: 1em;
+	}
+	.recupera {
+    width: 144px;
+}
+
+.finalop{
+    width: 153px;
+    /* width: 400px; */
+    float: left;
+    height: 2em;
+    background-color: transparent;
+    /* border: 1px solid #7e5d49; */
+    margin-top: calc(12vh /2);
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    outline: none;
+    border: none;
+}
+
+.phone {
+    margin-left: 1% !important;
+    width: 150px !important;
+}
+
+.receberc{
+	margin-top: calc(10vh/2);
+    height: 51px;
+    width: 67px;
+    background-color: transparent;
+    border: 1px solid #7e5d49;
+    color: fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    float: none;
+    font-size: 10pt;
     transition: 0.2s ease-in-out;
     margin-left: 1em;
 }
+
 .btn-ok {
     margin-top: calc(10vh/2);
     height: 51px;
@@ -563,3 +732,26 @@ border-radius: 50%;
     display: none;
 }
 
+
+
+
+
+@media only screen and (max-width: 860px) and (orientation: landscape) {
+	.dialog {
+	    margin-top: -10%;
+	}
+
+	.fala {
+    font-size: 23px;
+	}
+
+	.fala2 {
+    font-size: 16px;
+		}
+
+		#chat {
+    height: 223px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+}
